@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1e1e2e;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Ensure items spread across the nav */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .logout-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #c82333;
+  }
+  
+  .date-form-container {
+    background-color: #f0f0f0; /* Background color for the form section */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px; /* Adjust width to match habit container */
+    margin: auto;
+  }
+  
+  .date-form {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .date-form input[type="date"],
+  .date-form button {
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  .habit-container {
+    padding: 20px;
+    max-width: 600px; /* Adjust max-width as needed */
+    margin: auto; /* Center horizontally */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Add scrollbar if content exceeds height */
+    max-height: 80vh; /* Limit height to 80% of viewport height */
+  }
+  
+  .habit-list {
+    list-style: none;
+    padding: 0;
+    width: 100%; /* Ensure habits list takes full width */
+  }
+  
+  .habit-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: rgb(85, 79, 79);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .habit-item.completed {
+    background: #d4edda;
+  }
+  
+  .habit-details {
+    margin-bottom: 10px;
+  }
+  
+  .habit-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-complete {
+    background-color: #28a745;
+  }
+  
+  .button-undo {
+    background-color: #ffc107;
+  }
+  
+  .button-edit {
+    background-color: #17a2b8;
+    margin-right: 5px; /* Adjust spacing between Edit and Delete */
+  }
+  
+  .button-delete {
+    background-color: #dc3545;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .button-undo:hover {
+    background-color: #e0a800;
+  }
+  
+  .button-edit:hover {
+    background-color: #138496;
+  }
+  
+  .button-delete:hover {
+    background-color: #c82333;
+  }
+  
+  .input-description {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Ensure gap between inputs and select */
+  }
+  
+  input[type="text"],
+  select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 5px;
+  }
+  
+  select {
+    width: 100px; /* Adjust width as needed */
+  }
+  
+  .date-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .date-form form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .date-form input[type="date"],
+  .date-form button {
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  

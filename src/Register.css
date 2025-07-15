@@ -1,0 +1,130 @@
+/* Register.css */
+
+.registration-page {
+
+    margin-top: 130px;
+}
+.registration-page-container {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /* Ensure horizontal layout */
+    width: 90%;
+    max-width: 1200px;
+    background: linear-gradient(135deg, #1e1e2e, #3e3e5e);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    height: 70vh; /* Adjust height as needed */
+    margin: 20px auto; /* Center horizontally and add margin */
+  }
+  
+  .registration-left-section,
+  .registration-right-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .registration-left-section {
+    background: #252550;
+    color: #fff;
+  }
+  
+  .registration-left-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .registration-left-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .registration-right-section {
+    background: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .registration-form {
+    width: 100%;
+    max-width: 360px;
+  }
+  
+  .registration-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .error {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #357abf;
+  }
+  
+  .already-user-text {
+    margin-top: 20px; /* Adjust spacing from the registration form */
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .already-user-text a {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .already-user-text a:hover {
+    color: #357abf;
+  }
+  
+  @media (max-width: 768px) {
+    .registration-page-container {
+      flex-direction: column; /* Stack sections vertically on smaller screens */
+      height: auto; /* Allow container to expand vertically */
+    }
+  
+    .registration-left-section,
+    .registration-right-section {
+      padding: 20px;
+    }
+  }
+  

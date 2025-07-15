@@ -1,0 +1,343 @@
+.header {
+  background-color: #474040;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h3 {
+  color: white;
+  margin: 0;
+}
+
+.link-progress, .link-logout {
+  background-color: #ff6666;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.link-progress:hover, .link-logout:hover {
+  background-color: #ff4d4d;
+}
+
+.butto {
+
+  display:flex;
+  flex-direction: row;
+  gap:20px; 
+}
+
+.habit-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure it covers the viewport height */
+}
+
+.content {
+  display: flex;
+  flex-grow: 1; /* Grow to fill the remaining space */
+}
+
+.left-section {
+  background-color: #ddd;
+  flex: 1; /* Take up remaining space */
+  padding: 20px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  border-right: 1px solid #ddd;
+  max-height: calc(100vh - 60px); /* Account for the header height */
+}
+
+.habit-details {
+  padding: 1.2rem;
+  font-size: 1rem;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap:40px;
+  width: 35%; /* Fixed width */
+  max-width: 35%; /* Prevent overflow */
+  padding: 20px;
+  flex-shrink: 0; /* Ensure it does not grow */
+  overflow-y: auto; /* Allow overflow within the section */
+}
+
+.habit-list {
+  width: 100%; /* Full width of the left section */
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Remove margin */
+}
+
+.habit-item {
+  background-color: #5139bc;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 12px; /* Slightly larger radius for a softer look */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 3px 5px #9fabc6, -3px -3px 5px #ffffff; /* Neomorphic effect */
+  border: 1px solid #777ac1; /* Slight border to define edges */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Add hover effect to emphasize the neomorphic design */
+.habit-item:hover {
+  box-shadow: inset 4px 4px 6px #aeb1d9, inset -4px -4px 6px #ffffff;
+}
+
+.habit-item.completed {
+  color: rgb(238, 221, 221);
+  background-color: rgb(100, 141, 100);
+}
+.habit-actions {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+.habit-actions button {
+  margin-left: 10px;
+  background-color: #4CAF50;
+  border: none;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.habit-actions .button-edit {
+  background-color: #2196F3;
+}
+
+.habit-actions .button-delete {
+  background-color: #f44336;
+}
+
+.habit-actions .button-complete {
+  background-color: #4CAF50;
+}
+
+.form-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.date-form, .habit-form {
+  margin-bottom: 20px;
+}
+
+.date-form input[type="date"], .date-form .date-submit-button {
+  width: calc(50% - 5px); /* Adjust width as needed */
+  margin-right: 10px; /* Adjust spacing between inputs */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.date-form .date-submit-button {
+  width: calc(50% - 5px); /* Adjust width as needed */
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  max-width: 90%;
+}
+
+.modal-content textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.modal-actions .button {
+  width: 48%;
+}
+
+.modal-actions .button-save {
+  background-color: #4CAF50;
+}
+
+.modal-actions .button-cancel {
+  background-color: #f44336;
+}
+
+.date-form > form {
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+}
+
+.date-form {
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.date-input {
+  width: calc(50% - 5px); /* Adjust width as needed */
+  margin-right: 10px; /* Adjust spacing between inputs */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.date-submit-button {
+  width: calc(50% - 5px); /* Adjust width as needed */
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdownhabit {
+  height: 40px;
+  width: 100%;
+}
+
+.filter-form {
+  margin-bottom: 20px;
+}
+
+.filter-form select {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filter-form .button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.box {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #e0d6d6; /* White */
+
+}
+
+
+
+
+.filter-formm label {
+  display: inline-block;
+  margin-left: 30px; /* Adjust the value as needed */
+}
+
+
+
+.filter-formm label input {
+  margin-right: 10px; /* Adjust the value as needed */
+}
+
+
+
+.habit-actions button {
+  margin-left: 10px;
+  background-color: #4CAF50;
+  border: none;
+  padding: 10px; /* Example padding */
+  width: 100px; /* Example width */
+  height: 40px; /* Example height */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.date-form.box {
+
+  margin-top: 60px;
+}
+
+.habit-form {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.habit-form h2 {
+  margin-top: 0; /* Remove default margin */
+  margin-bottom: 20px; /* Adjust spacing */
+}
+
+.habit-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.habit-form input[type="text"],
+.habit-form select {
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.habit-form select.dropdownhabit {
+  height: 30px; /* Match the height of other select elements */
+  width: 460px;
+}
+
+.habit-form .button {
+  width: 94%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.habit-form .button:hover {
+  background-color: #45a049; /* Darken the hover color */
+}
+
+
